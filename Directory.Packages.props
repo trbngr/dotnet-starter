@@ -1,0 +1,47 @@
+<Project>
+    <ItemGroup Label="Common .NET crap">
+
+        <GlobalPackageReference
+            Include="Microsoft.EntityFrameworkCore.Design"
+            Version="9.0.6"
+            PrivateAssets="All"
+            IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+
+        <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="4.14.0" />
+        <PackageVersion Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.6" />
+        <PackageVersion Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+
+    </ItemGroup>
+
+    <ItemGroup Label="RabbitMQ">
+        <PackageVersion Include="RabbitMQ.Client" Version="7.1.2" />
+        <PackageVersion Include="RabbitMQ.Client.Core.DependencyInjection" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup Label="Wolverine">
+        <PackageVersion Include="WolverineFx" Version="4.2.0"/>
+        <PackageVersion Include="WolverineFx.EntityFrameworkCore" Version="4.2.0"/>
+        <PackageVersion Include="WolverineFx.Postgresql" Version="4.2.0"/>
+        <PackageVersion Include="WolverineFx.RabbitMQ" Version="4.2.0"/>
+    </ItemGroup>
+
+    <ItemGroup Label="HotChocolate GraphQL">
+        <PackageVersion Include="HotChocolate.AspNetCore" Version="15.1.5" />
+
+        <GlobalPackageReference
+            Include="HotChocolate.Types.Analyzers"
+            Version="15.1.5"
+            PrivateAssets="All"
+            IncludeAssets="runtime; build; native; contentfiles; analyzers; buildtransitive" />
+
+    </ItemGroup>
+
+    <ItemGroup Label="Testing">
+        <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+        <PackageVersion Include="JetBrains.Annotations" Version="2025.1.0-eap1" />
+        <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+        <PackageVersion Include="Moq" Version="4.20.72" />
+        <PackageVersion Include="xunit" Version="2.9.2" />
+        <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.2" />
+    </ItemGroup>
+</Project>

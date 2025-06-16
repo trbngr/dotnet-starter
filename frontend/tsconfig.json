@@ -1,0 +1,29 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compileOnSave": false,
+  "files": [],
+  "references": [
+    {
+      "path": "./apps/demo-e2e"
+    },
+    {
+      "path": "./apps/demo"
+    },
+    {
+      "path": "./libraries/orders"
+    },
+    {
+      "path": "./libraries/products"
+    },
+    {
+      "path": "./libraries/remove"
+    }
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "node10",
+      "customConditions": null
+    }
+  }
+}
